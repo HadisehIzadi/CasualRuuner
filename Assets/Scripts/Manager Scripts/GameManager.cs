@@ -107,7 +107,7 @@ public class GameManager : MonoBehaviour
             if(runners.Length < 2)
             {
                 finish = true;
-                if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("Level"))
+                if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("Level") && SceneManager.GetActiveScene().buildIndex!= 4)
                     PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level", 1) + 1);
             }
         }
