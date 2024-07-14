@@ -9,6 +9,8 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
+    	// when it is public we set it in engine and there is no need to declare in start function
+    	
        // player = GameObject.Find(PlayerPrefs.GetString("Player")).gameObject.transform;
       // player = GameObject.Find("Player").gameObject.transform;
     }
