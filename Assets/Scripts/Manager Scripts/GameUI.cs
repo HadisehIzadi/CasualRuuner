@@ -85,7 +85,8 @@ public class GameUI : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    	if(SceneManager.GetActiveScene().buildIndex != 4)
+        	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void Exit()
